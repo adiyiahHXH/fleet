@@ -1,0 +1,22 @@
+<div class="container mt-4 d-flex justify-content-center">
+  <mat-spinner *ngIf="loading"></mat-spinner>
+  <div *ngIf="!loading && vechicles">
+  <mat-card  *ngFor="let v of vechicles" class="mb-4">
+      <mat-card-header>
+        <div mat-card-avatar class=""></div>
+        <mat-card-title>Id: {{ v.id }}</mat-card-title>
+        <mat-card-subtitle>{{ v.year }}</mat-card-subtitle>
+        <mat-card-subtitle>{{ v.name }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="v.image" alt="Electric Car">
+      <mat-card-content>
+        <p>
+          GM is on its way to an all-electric future, with a commitment to 30 new global electric vehicles by 2025.
+          We are aggressively going after every aspect of what it takes to put everyone in an EV because we need millions
+          of EVs on the road to make a meaningful impact toward building a zero-emissions future.
+          GM is positioned to design, engineer, and produce EVs for every style and price point, and we are rapidly building a competitive advantage in batteries, software, vehicle integration, manufacturing and customer experience.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

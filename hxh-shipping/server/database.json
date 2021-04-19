@@ -1,0 +1,58 @@
+{
+    "vechicles": [
+      {
+        "id": "1",
+        "name": "Test 1",
+        "year": "2021",
+        "image": "../../assets/car2.jpg",
+        "label": {
+          "text": "95%",
+          "color": "green",
+          "fontSize": "20px"
+        },
+        "description": "Electric Car 1",
+        "title": "ID: 1 - Fuel Level: 95%",
+        "position": {
+          "lat": 33.9255834374461,
+          "lng":-84.34914624895843
+        },
+        "options": { "icon":  "../../assets/car-marker.png", "animation": 1 }
+      },
+      {
+        "id": "2",
+        "name": "Test 2",
+        "year": "2020",
+        "image": "../../assets/car1.jpg",
+        "label": {
+          "text": "65%",
+          "color": "blue",
+          "fontSize": "20px"
+        },
+        "description": "Sport Package",
+        "title": "ID: 2 - Fuel Level: 65%",
+        "position": {
+          "lat": 33.91372462477167,
+          "lng": -84.34163606371673
+        },
+        "options": { "icon":  "../../assets/car-marker.png", "animation": 1 }
+      },
+      {
+        "id": "3",
+        "name": "Test 3",
+        "year": "2022",
+        "image": "../../assets/car3.png",
+        "label": {
+          "text": "25%",
+          "color": "red",
+          "fontSize": "20px"
+        },
+        "description": "Sport Package",
+        "title": "ID: 3 - Fuel Level: 25%",
+        "position": {
+          "lat": 33.922699013307074,
+          "lng": -84.33614289965423
+        },
+        "options": { "icon":  "../../assets/car-marker.png", "animation": 1 }
+      }
+    ]
+}

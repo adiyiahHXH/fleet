@@ -1,0 +1,16 @@
+<div class="container mt-4 d-flex justify-content-center">
+  <mat-spinner *ngIf="loading"></mat-spinner>
+  <div *ngIf="!loading && vechicles">
+    <google-map height="500px" width="750px" [center]="center" [options]="options">
+      <map-marker #marker="mapMarker"
+        *ngFor="let vechicle of vechicles" 
+        [position]="vechicle.position"
+        [label]="vechicle.label"
+        [title]="vechicle.title"
+        [options]="vechicle.options"
+        (mapClick)="openMarkerInfo(marker, vechicle.title)">
+      </map-marker>
+      <map-info-window #mapInfo>{{ info }}</map-info-window>
+    </google-map>
+  </div>
+</div>
